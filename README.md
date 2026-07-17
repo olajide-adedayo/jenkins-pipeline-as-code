@@ -428,3 +428,46 @@ Key Outcomes
 - Strengthened practical experience with Jenkins Pipeline configuration and Git SCM integration.
 - Improved troubleshooting skills by resolving real-world authentication and repository connectivity issues.
 - Produced a reusable, well-documented project suitable for a professional DevOps portfolio.
+
+
+🎯 Skills Demonstrated
+
+This project demonstrates practical DevOps skills in Continuous Integration, Pipeline as Code, Source Code Management, and secure repository integration.
+
+DevOps
+
+- Pipeline as Code
+- Continuous Integration (CI)
+- Jenkins Pipeline
+- Source Code Management (SCM)
+- Pipeline Automation
+
+Version Control
+
+- Git
+- GitHub
+- Branch Management
+- Commit Management
+
+Jenkins
+
+- Pipeline Job Configuration
+- Pipeline Script from SCM
+- Jenkins Credentials Management
+- Build Execution
+- Console Log Analysis
+
+Security
+
+- SSH Authentication
+- SSH Username with Private Key
+- Git Host Key Verification
+- Secure GitHub Repository Access
+
+Professional Practices
+
+- Technical Documentation
+- Repository Organization
+- Troubleshooting
+- DevOps Best Practices
+- Version-Controlled Pipeline Management

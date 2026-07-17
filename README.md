@@ -105,3 +105,50 @@ Environment Summary
 - Pipeline Definition: "Jenkinsfile"
 - Pipeline Type: Pipeline Script from SCM
 - Authentication Method: SSH
+
+
+🔄 Project Workflow
+
+The project followed a structured workflow to implement Pipeline as Code using Jenkins and GitHub. The Jenkins pipeline definition was maintained in a GitHub repository and securely retrieved by Jenkins using Pipeline Script from SCM and SSH authentication.
+
+Workflow Diagram
+
+Create Jenkinsfile
+        │
+        ▼
+Initialize Local Git Repository
+        │
+        ▼
+Commit & Push Jenkinsfile to GitHub
+        │
+        ▼
+Create Jenkins Pipeline Job
+        │
+        ▼
+Configure GitHub Repository (SCM)
+        │
+        ▼
+Configure SSH Credentials
+        │
+        ▼
+Configure Git Host Key Verification
+        │
+        ▼
+Retrieve Jenkinsfile from GitHub
+        │
+        ▼
+Execute Jenkins Pipeline
+        │
+        ▼
+Successful Build
+
+Workflow Summary
+
+1. A "Jenkinsfile" was created to define the pipeline.
+2. The local Git repository was initialized and connected to GitHub.
+3. The Jenkinsfile was committed and pushed to the GitHub repository.
+4. A Jenkins Pipeline job was created using Pipeline Script from SCM.
+5. Jenkins was configured to access the GitHub repository using SSH credentials.
+6. Git Host Key Verification was configured to establish trusted communication with GitHub.
+7. Jenkins retrieved the Jenkinsfile from the main branch.
+8. The pipeline executed successfully and completed the build.

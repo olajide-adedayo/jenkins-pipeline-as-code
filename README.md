@@ -357,3 +357,32 @@ The successful console output included key execution events such as:
 Finished: SUCCESS
 
 This successful execution verified that the complete Pipeline as Code implementation was functioning correctly from source control through pipeline execution
+
+
+📁 Repository Structure
+
+The repository is organized to separate the pipeline definition, project documentation, and supporting assets, making it easy to navigate and maintain.
+
+jenkins-pipeline-as-code/
+│
+├── screenshots/
+│   ├── 05-create-jenkinsfile-in-vscode.png
+│   ├── 09-github-repository-with-jenkinsfile.png
+│   ├── 10-jenkins-ec2-running.png
+│   ├── 11-jenkins-dashboard-before-pipeline-job.png
+│   ├── 12-build-pipeline-job-details.png
+│   ├── 13-pipeline-script-from-scm-selected.png
+│   ├── 15-ssh-username-with-private-key-configuration.png
+│   ├── 16-git-scm-configuration-success.png
+│   ├── 18-first-pipeline-build-success.png
+│   └── 19-console-output-success.png
+│
+├── Jenkinsfile
+└── README.md
+
+Repository Contents
+
+File / Directory| Purpose
+"screenshots/"| Contains the screenshots used throughout the project documentation.
+"Jenkinsfile"| Defines the Jenkins Declarative Pipeline used for Pipeline as Code.
+"README.md"| Provides complete project documentation, implementation details, and supporting information.

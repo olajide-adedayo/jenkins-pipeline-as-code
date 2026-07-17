@@ -152,3 +152,48 @@ Workflow Summary
 6. Git Host Key Verification was configured to establish trusted communication with GitHub.
 7. Jenkins retrieved the Jenkinsfile from the main branch.
 8. The pipeline executed successfully and completed the build.
+
+
+💻 Implementation Steps
+
+The project was implemented by following a structured Pipeline as Code workflow using Jenkins, GitHub, and SSH authentication.
+
+Step 1 – Create the GitHub Repository
+
+- Created a dedicated GitHub repository to store the pipeline definition.
+- Configured the repository to use the main branch.
+- Prepared the repository for Pipeline as Code implementation.
+
+Step 2 – Create the Jenkinsfile
+
+- Created a "Jenkinsfile" containing the pipeline definition.
+- Defined the pipeline stages using Declarative Pipeline syntax.
+- Saved the pipeline definition under version control.
+
+Step 3 – Initialize Git and Push to GitHub
+
+- Initialized the local Git repository.
+- Staged the Jenkinsfile.
+- Created the initial Git commit.
+- Pushed the repository to GitHub.
+
+Step 4 – Configure the Jenkins Pipeline Job
+
+- Created a new Pipeline project in Jenkins.
+- Selected Pipeline Script from SCM as the pipeline definition.
+- Configured Git as the Source Code Management (SCM) provider.
+- Specified the GitHub repository URL.
+
+Step 5 – Configure Secure GitHub Access
+
+- Created Jenkins SSH credentials.
+- Configured SSH Username with Private Key authentication.
+- Selected the newly created credentials for the Pipeline job.
+- Configured Git Host Key Verification to establish trusted communication with GitHub.
+
+Step 6 – Execute the Pipeline
+
+- Saved the Pipeline configuration.
+- Triggered the initial build.
+- Jenkins retrieved the "Jenkinsfile" from the GitHub repository.
+- The pipeline executed successfully and completed without errors.

@@ -81,3 +81,27 @@ Jenkins Credentials| Securely stores the SSH private key used to authenticate wi
 Git Host Key Verification| Verifies the identity of the GitHub host before establishing an SSH connection.
 Git Bash| Used to initialize the local Git repository, stage changes, commit, and push to GitHub.
 Visual Studio Code| Source code editor used to create and manage the Jenkinsfile.
+
+
+⚙️ Prerequisites
+
+Before implementing this project, the following prerequisites were completed:
+
+Requirement| Purpose
+Jenkins Server| Installed, configured, and accessible through the Jenkins web interface.
+Git Installation| Installed on both the local development machine and the Jenkins server.
+GitHub Account| Used to host the repository containing the Jenkinsfile.
+GitHub Repository| Created to store the Jenkinsfile under version control.
+SSH Key Pair| Generated and configured to enable secure authentication between Jenkins and GitHub.
+Jenkins Credentials| Configured to securely store the SSH private key for repository access.
+Git Host Key Verification| Configured in Jenkins to establish trusted communication with GitHub.
+Visual Studio Code| Used to create and edit the Jenkinsfile.
+Git Bash| Used for Git repository initialization, staging, committing, and pushing changes.
+
+Environment Summary
+
+- Repository: "jenkins-triggers"
+- Default Branch: "main"
+- Pipeline Definition: "Jenkinsfile"
+- Pipeline Type: Pipeline Script from SCM
+- Authentication Method: SSH

@@ -255,3 +255,48 @@ Benefits of SCM Integration
 - Simplifies collaboration across development and DevOps teams.
 - Ensures Jenkins always executes the latest committed pipeline definition.
 - Supports repeatable and consistent pipeline execution.
+
+
+🔑 SSH Authentication Configuration
+
+To establish secure communication between Jenkins and the GitHub repository, SSH authentication was configured using Jenkins credentials. This approach eliminates the need for username/password authentication and follows industry best practices for secure repository access.
+
+Jenkins Credential Configuration
+
+Setting| Value
+Credential Type| SSH Username with Private Key
+Username| "git"
+Scope| Global
+Private Key| Entered directly into Jenkins
+Authentication Method| SSH
+
+SSH Authentication Workflow
+
+GitHub Repository
+        │
+        │
+SSH Private Key
+        │
+        ▼
+Jenkins Credentials
+        │
+        ▼
+Git SCM Authentication
+        │
+        ▼
+Repository Access Granted
+        │
+        ▼
+Jenkinsfile Retrieved
+
+Security Configuration
+
+The following security configurations were completed during the implementation:
+
+- Created an SSH credential in Jenkins using SSH Username with Private Key.
+- Configured the credential with Global scope.
+- Associated the credential with the Pipeline job.
+- Configured Git Host Key Verification to establish trusted communication with GitHub.
+- Verified successful repository access after applying the required security settings.
+
+This secure configuration enabled Jenkins to authenticate with GitHub, retrieve the "Jenkinsfile", and execute the pipeline successfully.

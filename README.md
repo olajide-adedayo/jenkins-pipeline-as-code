@@ -64,3 +64,20 @@ SSH Authentication| Provides secure communication between Jenkins and GitHub.
 Jenkins Pipeline Job| Retrieves the Jenkinsfile using Pipeline Script from SCM.
 Pipeline Execution| Executes the stages defined in the Jenkinsfile.
 Console Output| Displays the execution logs and final build status.
+
+
+🛠️ Technology Stack
+
+The following technologies and tools were used to implement this project:
+
+Technology| Purpose
+Jenkins| Continuous Integration (CI) server used to create and execute the Pipeline job.
+Git| Version control system used to track changes to the Jenkinsfile.
+GitHub| Source Code Management (SCM) platform used to host the Jenkinsfile repository.
+Jenkinsfile| Pipeline as Code definition containing the pipeline stages and build logic.
+Git SCM| Enables Jenkins to retrieve the Jenkinsfile directly from the GitHub repository.
+SSH Authentication| Provides secure communication and authentication between Jenkins and GitHub.
+Jenkins Credentials| Securely stores the SSH private key used to authenticate with GitHub.
+Git Host Key Verification| Verifies the identity of the GitHub host before establishing an SSH connection.
+Git Bash| Used to initialize the local Git repository, stage changes, commit, and push to GitHub.
+Visual Studio Code| Source code editor used to create and manage the Jenkinsfile.

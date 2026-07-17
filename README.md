@@ -12,6 +12,27 @@ Building a Secure Jenkins Pipeline from GitHub Using Pipeline as Code (Jenkinsfi
 [![Status](https://img.shields.io/badge/Status-Completed-brightgreen)](#)
 
 
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Business Objective](#business-objective)
+- [Solution Architecture](#solution-architecture)
+- [Technology Stack](#technology-stack)
+- [Prerequisites](#prerequisites)
+- [Project Workflow](#project-workflow)
+- [Implementation Steps](#implementation-steps)
+- [Jenkins Pipeline Configuration](#jenkins-pipeline-configuration)
+- [GitHub SCM Integration](#github-scm-integration)
+- [SSH Authentication Configuration](#ssh-authentication-configuration)
+- [Pipeline Execution](#pipeline-execution)
+- [Project Screenshots](#project-screenshots)
+- [Repository Structure](#repository-structure)
+- [Troubleshooting](#troubleshooting)
+- [Lessons Learned](#lessons-learned)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Future Enhancements](#future-enhancements)
+- [Author](#author)
+
 📖 Project Overview
 
 This project demonstrates the implementation of Pipeline as Code by integrating Jenkins with a GitHub repository using a Jenkinsfile stored in Source Code Management (SCM). Instead of defining the pipeline directly within the Jenkins user interface, the pipeline configuration is maintained in a version-controlled GitHub repository, promoting consistency, maintainability, and collaboration.

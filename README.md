@@ -28,3 +28,39 @@ Modern software development teams require a reliable, secure, and maintainable a
 This project addresses these challenges by implementing Pipeline as Code, where the pipeline definition is stored as a Jenkinsfile in a GitHub repository and retrieved automatically by Jenkins during pipeline execution. This approach enables version control, improves collaboration, simplifies pipeline maintenance, and ensures that infrastructure and automation workflows are managed using the same software engineering best practices applied to application source code.
 
 By integrating Jenkins with GitHub using SSH authentication, the project also demonstrates a secure and production-oriented method for accessing source code repositories while maintaining a streamlined Continuous Integration workflow.
+
+
+🏗️ Solution Architecture
+
+The project implements a secure Pipeline as Code workflow where Jenkins retrieves the pipeline definition from a GitHub repository using Source Code Management (SCM) and authenticates securely using SSH credentials. The pipeline is defined in a "Jenkinsfile", allowing the entire CI workflow to be version-controlled and managed as code.
+
+Architecture Flow
+
+Developer
+     │
+     ▼
+GitHub Repository
+(Jenkinsfile)
+     │
+     │  SSH Authentication
+     ▼
+Jenkins Pipeline Job
+(Pipeline Script from SCM)
+     │
+     ▼
+Pipeline Execution
+(Build Stage)
+     │
+     ▼
+Console Output
+(Build Successful)
+
+Architecture Components
+
+Component| Description
+Developer| Creates and updates the Jenkinsfile in the GitHub repository.
+GitHub Repository| Stores the version-controlled Jenkinsfile.
+SSH Authentication| Provides secure communication between Jenkins and GitHub.
+Jenkins Pipeline Job| Retrieves the Jenkinsfile using Pipeline Script from SCM.
+Pipeline Execution| Executes the stages defined in the Jenkinsfile.
+Console Output| Displays the execution logs and final build status.

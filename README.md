@@ -197,3 +197,31 @@ Step 6 – Execute the Pipeline
 - Triggered the initial build.
 - Jenkins retrieved the "Jenkinsfile" from the GitHub repository.
 - The pipeline executed successfully and completed without errors.
+
+
+🔐 Jenkins Pipeline Configuration
+
+After creating the Pipeline job, Jenkins was configured to retrieve the pipeline definition directly from the GitHub repository instead of storing the pipeline script within the Jenkins user interface.
+
+Pipeline Configuration
+
+Setting| Value
+Job Type| Pipeline
+Definition| Pipeline script from SCM
+SCM| Git
+Repository| GitHub Repository
+Branch Specifier| "*/main"
+Script Path| "Jenkinsfile"
+Lightweight Checkout| Enabled
+
+Pipeline Definition
+
+The pipeline definition was maintained in a "Jenkinsfile" stored in the root directory of the GitHub repository. This approach follows the Pipeline as Code methodology, ensuring that pipeline changes are version-controlled alongside the project source code.
+
+Benefits of Pipeline as Code
+
+- Pipeline configuration is version-controlled.
+- Changes are tracked using Git history.
+- Jenkins configuration remains simple and maintainable.
+- Team members can collaborate using a shared pipeline definition.
+- Pipeline updates can be reviewed through Git commits before execution.

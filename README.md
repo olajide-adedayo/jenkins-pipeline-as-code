@@ -386,3 +386,18 @@ File / Directory| Purpose
 "screenshots/"| Contains the screenshots used throughout the project documentation.
 "Jenkinsfile"| Defines the Jenkins Declarative Pipeline used for Pipeline as Code.
 "README.md"| Provides complete project documentation, implementation details, and supporting information.
+
+
+🔧 Troubleshooting
+
+During the implementation of the Jenkins Pipeline as Code project, several configuration and integration issues were encountered and successfully resolved.
+
+Issue| Root Cause| Resolution
+Failed to connect to the GitHub repository.| SSH authentication was not fully configured for the Pipeline job.| Created SSH Username with Private Key credentials in Jenkins and selected the correct credential for the Git repository.
+Host key verification failed during repository validation.| Jenkins did not trust GitHub's SSH host key under the default verification settings.| Configured Git Host Key Verification in Manage Jenkins → Security → Git Host Key Verification Configuration, then saved the configuration and revalidated the repository connection.
+Repository validation continued to fail after creating the SSH credential.| The newly created Jenkins credential had not been selected in the Pipeline job configuration.| Updated the Git SCM configuration to use the correct git (GitHub SSH Credentials) credential.
+Repository access succeeded, but the Pipeline configuration required validation.| The Pipeline job had not yet been executed after completing the SCM configuration.| Triggered the first build using Build Now and confirmed successful retrieval of the "Jenkinsfile" and pipeline execution.
+
+Outcome
+
+After resolving these issues, Jenkins successfully connected to the GitHub repository using SSH authentication, retrieved the "Jenkinsfile" from the main branch, and completed the pipeline execution with a SUCCESS status.

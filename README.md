@@ -225,3 +225,33 @@ Benefits of Pipeline as Code
 - Jenkins configuration remains simple and maintainable.
 - Team members can collaborate using a shared pipeline definition.
 - Pipeline updates can be reviewed through Git commits before execution.
+
+
+🔗 GitHub SCM Integration
+
+Jenkins was configured to retrieve the pipeline definition directly from the GitHub repository using Git Source Code Management (SCM). This configuration ensures that the latest version of the "Jenkinsfile" is obtained from the repository whenever the pipeline is executed.
+
+Repository Configuration
+
+Configuration| Value
+SCM Provider| Git
+Repository Hosting| GitHub
+Default Branch| "main"
+Pipeline Definition| "Jenkinsfile"
+Repository Access| SSH Authentication
+
+Integration Workflow
+
+1. Jenkins connects securely to the GitHub repository.
+2. Git authenticates using the configured SSH credentials.
+3. Jenkins retrieves the latest "Jenkinsfile" from the main branch.
+4. The pipeline definition is loaded into Jenkins.
+5. Jenkins executes the stages defined in the "Jenkinsfile".
+
+Benefits of SCM Integration
+
+- Maintains a single source of truth for the pipeline definition.
+- Tracks pipeline changes through Git version control.
+- Simplifies collaboration across development and DevOps teams.
+- Ensures Jenkins always executes the latest committed pipeline definition.
+- Supports repeatable and consistent pipeline execution.

@@ -489,3 +489,16 @@ The following enhancements could be implemented to extend the capabilities of th
 Continuous Improvement
 
 This project establishes a solid foundation for Pipeline as Code using Jenkins and GitHub. Future enhancements will focus on increasing automation, improving security, strengthening collaboration, and expanding the CI/CD workflow toward production-ready deployment pipelines.
+
+
+👨‍💻 Author
+
+Olajide Adedayo
+
+AWS Cloud and DevOps Engineer with hands-on experience implementing cloud infrastructure, Continuous Integration (CI), Pipeline as Code, containerization, and automation using industry-standard tools and AWS services. Passionate about building scalable, secure, and well-documented DevOps solutions while continuously expanding technical expertise through real-world projects.
+
+Connect with Me
+
+- GitHub: https://github.com/olajide-adedayo
+- Medium: https://medium.com/@olajideadedayo230
+- LinkedIn: https://www.linkedin.com/in/olajide-adedayo-9126593b3/

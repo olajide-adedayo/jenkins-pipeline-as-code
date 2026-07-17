@@ -379,6 +379,87 @@ Finished: SUCCESS
 
 This successful execution verified that the complete Pipeline as Code implementation was functioning correctly from source control through pipeline execution
 
+## 📸 Project Screenshots
+
+The following screenshots highlight the major implementation stages of the project, from creating the pipeline definition to achieving a successful pipeline execution.
+
+### 1. Creating the Jenkinsfile
+
+The pipeline definition was created using a Jenkinsfile in Visual Studio Code.
+
+![Creating the Jenkinsfile](screenshots/05-create-jenkinsfile-in-vscode.png)
+
+---
+
+### 2. GitHub Repository with Jenkinsfile
+
+The Jenkinsfile was committed and pushed to the GitHub repository.
+
+![GitHub Repository with Jenkinsfile](screenshots/09-github-repository-with-jenkinsfile.png)
+
+---
+
+### 3. Jenkins Server Running
+
+The Jenkins EC2 instance was running and ready for pipeline configuration.
+
+![Jenkins EC2 Running](screenshots/10-jenkins-ec2-running.png)
+
+---
+
+### 4. Jenkins Dashboard
+
+The Jenkins dashboard before creating the Pipeline job.
+
+![Jenkins Dashboard](screenshots/11-jenkins-dashboard-before-pipeline-job.png)
+
+---
+
+### 5. Pipeline Job Configuration
+
+The Pipeline job configuration showing the project details.
+
+![Pipeline Job Configuration](screenshots/12-build-pipeline-job-details.png)
+
+---
+
+### 6. Pipeline Script from SCM
+
+The Pipeline was configured to retrieve the Jenkinsfile from GitHub using *Pipeline Script from SCM*.
+
+![Pipeline Script from SCM](screenshots/13-pipeline-script-from-scm-selected.png)
+
+---
+
+### 7. SSH Authentication Configuration
+
+Jenkins was configured with *SSH Username with Private Key* credentials for secure GitHub access.
+
+![SSH Authentication Configuration](screenshots/15-ssh-username-with-private-key-configuration.png)
+
+---
+
+### 8. Successful Git SCM Configuration
+
+Git SCM was successfully configured with the repository URL, branch, and SSH credentials.
+
+![Git SCM Configuration Success](screenshots/16-git-scm-configuration-success.png)
+
+---
+
+### 9. Successful Pipeline Build
+
+The first Pipeline build completed successfully.
+
+![First Pipeline Build Success](screenshots/18-first-pipeline-build-success.png)
+
+---
+
+### 10. Console Output
+
+The Jenkins console output confirmed successful pipeline execution with a final build status of *SUCCESS*.
+
+![Console Output Success](screenshots/19-console-output-success.png)
 
 📁 Repository Structure
 
